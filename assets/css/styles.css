@@ -358,7 +358,7 @@
 }
 .about-content .skills .skill-item{
   flex: 0 0 100%;
-  max-width: 100%;
+  max-width: 50%;
 }
 .skills__box{
   display: flex;
