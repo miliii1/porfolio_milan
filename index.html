@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="logo" href="assets/img/html.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--======================== CSS ===========================================-->
@@ -10,9 +11,10 @@
     <!--======================== LINE ICONS ===========================================-->
     <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
 
+
     <!--======================== SWIPER CSS ===========================================-->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-budle.min.css">
-
+    
     <title>Milagros Jara Web</title>
 </head>
 <body>
@@ -35,21 +37,23 @@
                         <a href="#about" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                        <a href="#project" class="nav-link">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contacto</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
+                <!-- nav close -->
+                <div class="nav-close" id="nav-close">
+                    <i class="lni lni-close"></i>
+                </div>
             </div>
-            <div class="nav-btns">
-                <!-- theme change btn -->
-                <i class="lni lni-pallet change-theme" id="theme-button"></i>
-                    <!-- toggle btn -->
-                    <div class="nav-toggle" id="nav-toggle">
-                        <i class="lni lni-grid-alt"></i>
-                    </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="lni lni-grid-alt"></i>
             </div>
+            <div class="customize-theme">
+                <input type="checkbox" id="toggle">
+              </div>
         </nav>
     </header>
 
@@ -67,23 +71,23 @@
                     <span><span class="info-text">Full Stack Developer</span></span>
                     <!-- social icons -->
                     <ul class="social-icons">
-                        <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                        <li><a href="#"><i class="lni lni-github-original"></i></a></li>
-                        <li><a href="#"><i class="lni lni-envelope"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/milagros-jara/"><i class="lni lni-linkedin-original"></i></a></li>
+                        <li><a href="https://github.com/miliii1"><i class="lni lni-github-original"></i></a></li>
+                        <li><a href="mailto:milagrosjarag20@gmail.com"><i class="lni lni-envelope"></i></a></li>
                     </ul>
                     <!-- button -->
                     <div>
-                        <a href="#" class="btn btn-default">Hire me!</a>
+                        <a href="mailto:milagrosjarag20@gmail.com" class="btn btn-default">Hire me!</a>
                     </div>
                     <!-- scroll down mouse wheel -->
-                    <div class="scroll-down">
-                        <a href="#" class="mouse-wrapper">
+                    <!-- <div class="scroll-down">
+                        <a href="" class="mouse-wrapper">
                             <span>Scroll Down</span>
                             <span class="mouse">
                                 <span class="wheel"></span>
                             </span>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -91,11 +95,11 @@
     <section class="about section" id="about">
         <div class="container">
             <!-- section title -->
-            <h2 class="section-title padd-15">Acerca de mi</h2>
+            <h2 class="section-title padd-15">About Me</h2>
             <div class="row">
                 <div class="about-img padd-15">
                     <!-- avatar img -->
-                    <img src="assets/img/perfil3.jpg" alt="">
+                    <img src="assets/img/perfil4.png" alt="">
                 </div>
                 <div class="about-content padd-15">
                     <div class="rounded">
@@ -106,83 +110,193 @@
                                     Me desempeñe en un año lenguajes sólidos y consistentes. Siempre estoy en constante aprendizaje, 
                                     buscando nuevas tecnologías y profundizando las ya aprendidas.</p>
                                     <div>
-                                        <a href="/assets/pdf/milagros-cv.pdf" class="btn btn-default">Download CV</a>
+                                        <a href="assets/pdf/milagros-cv.pdf" class="btn btn-default">Download CV</a>
                                     </div>
                             </div>
-                            <div class="skills padd-15">
-                                <div class="skills__box">
-                                    <!-- skills item -->
-                                    <div class="skill-item">
-                                        <h4>HTML</h4>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 85%; background: rgb(221, 95, 22);"></div>
-                                            <div class="skill-percent">85%</div>
-                                        </div>
+                            <!-- skills habilidades -->
+                            <section class="skills">
+                                <h2 class="skill-header">My Top Skills</h2>
+                            
+                                <div class="skills-wrapper">
+                                    <div class="first-set animate__animated animate__pulse">
+                                        <img src="assets/img/html.png" alt="" loading="lazy" class="icon icon-card" />
+                                        <img src="assets/img/css.png" alt="" loading="lazy" class="icon icon-card" />
+                                        <img src="assets/img/javascript.png" alt="" loading="lazy" class="icon icon-card" />
                                     </div>
-                                    <!-- skills item -->
-                                    <div class="skill-item">
-                                        <h4>CSS</h4>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 85%; background: rgb(20, 120, 235);"></div>
-                                            <div class="skill-percent">55%</div>
-                                        </div>
+                            
+                                    <div class="skills-wrapper">
+                                        <img src="assets/img/react.png" alt="" loading="lazy" class="icon icon-card" />
+                                        <img src="assets/img/redux.png" alt="" loading="lazy" class="icon icon-card" />
+                                        <img src="assets/img/nodejs.png" alt="" loading="lazy" class="icon icon-card" />
                                     </div>
-                                    <!-- skills item -->
-                                    <div class="skill-item">
-                                        <h4>JavaScript</h4>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 74%; background: rgb(233, 186, 31);"></div>
-                                            <div class="skill-percent">74%</div>
-                                        </div>
+                                </div>
+
+                                    <div class="skills-wrapper">
+                                        <img src="assets/img/mongodb.png" alt="" loading="lazy" class="icon icon-card" />
+                                        <img src="assets/img/postgresql.png" alt="" loading="lazy" class="icon icon-card" />
+                                        <img src="assets/img/bootstrap.png" alt="" loading="lazy" class="icon icon-card" />
                                     </div>
-                                    <!-- skills item -->
-                                    <div class="skill-item">
-                                        <h4>ReactJs</h4>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 69%; background: rgb(20, 235, 217);"></div>
-                                            <div class="skill-percent">69%</div>
-                                        </div>
-                                    </div>
-                                    <div class="skills__back">
-                                        
-                                    </div>
-                                    <div class="skill-item">
-                                        <h4>Redux</h4>
-                                        <div class="progress">
-                                            <div class="progress-in" style="width: 69%; background: rgb(138, 20, 235);"></div>
-                                            <div class="skill-percent">69%</div>
-                                        </div>
-                                    </div>
-                                        <div class="skill-item">
-                                            <h4>NodeJS</h4>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 69%; background: rgb(85, 226, 19);"></div>
-                                                <div class="skill-percent">69%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item">
-                                            <h4>MongoDB</h4>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 69%; background: rgb(99, 100, 99);"></div>
-                                                <div class="skill-percent">69%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item">
-                                            <h4>PostgreSQL</h4>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 69%; background: rgb(19, 74, 226);"></div>
-                                                <div class="skill-percent">69%</div>
-                                            </div>
-                                        </div>
-                                </div>  <!-- AQUI ROW-->
-                            </div>
-                        </div> <!-- otro row2 --->
+                                </div>
+                            </section>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <!-- ========================================= Projects  ========================================= -->
+    <section class="project section" id="project">
+        <div class="container">
+            <!-- section title -->
+            <h2 class="section-title padd-15">Projects</h2>
+            <div class="row">
+                <!-- project item -->
+                <div class="project-item padd-15">
+                    <div class="project-item-inner">
+                        <div class="project-item-thumbnail">
+                            <img src="assets/img/proyecto1.1.png" alt="proyecto1">
+                            <div class="mask"></div>
+                        </div>
+                        <span class="term">Full Stack</span>
+                        <h3 class="project-item-title">PokeApi</h3>
+                        <a href="https://github.com/miliii1/PI-Pokemon-m">
+                            <span class="more-button">&hellip;</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- project item -->
+                <div class="project-item padd-15">
+                    <div class="project-item-inner">
+                        <div class="project-item-thumbnail">
+                            <img src="assets/img/proyecto2.2.png" alt="proyecto2">
+                            <div class="mask"></div>
+                        </div>
+                        <span class="term">Frontend</span>
+                        <h3 class="project-item-title">Sitio Star wars</h3>
+                        <a href="https://github.com/miliii1/react-sw">
+                            <span class="more-button">&hellip;</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- project item -->
+                <div class="project-item padd-15">
+                    <div class="project-item-inner">
+                        <div class="project-item-thumbnail">
+                            <img src="assets/img/proyecto3.3.png" alt="proyecto3">
+                            <div class="mask"></div>
+                        </div>
+                        <span class="term">Frontend</span>
+                        <h3 class="project-item-title">Sitio Marvel</h3>
+                        <a href="https://github.com/miliii1/primera-ja">
+                            <span class="more-button">&hellip;</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- project item -->
+                <div class="project-item padd-15">
+                    <div class="project-item-inner">
+                        <div class="project-item-thumbnail">
+                            <img src="assets/img/proyecto4.4.png" alt="proyecto4">
+                            <div class="mask"></div>
+                        </div>
+                        <span class="term">Creative</span>
+                        <h3 class="project-item-title">Libros y puntos</h3>
+                        <a href="https://github.com/miliii1/app-libros">
+                            <span class="more-button">&hellip;</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- project item -->
+                <div class="project-item padd-15">
+                    <div class="project-item-inner">
+                        <div class="project-item-thumbnail">
+                            <img src="assets/img/proyecto5.5.png" alt="proyecto5">
+                            <div class="mask"></div>
+                        </div>
+                        <span class="term">Frontend</span>
+                        <h3 class="project-item-title">¡Juegas!</h3>
+                        <a href="https://github.com/miliii1/proyectoCode">
+                            <span class="more-button">&hellip;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--======================== CONTACT ===========================================-->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <!-- section title -->
+            <h2 class="section-title padd-15">Contact me</h2>
+            <div class="row">
+                <!-- contact caja -->
+                <div class="contact-box padd-15">
+                    <div class="contact-data">
+                        <!-- contact informacione -->
+                        <div class="contact-information">
+                            <h3 class="contact-subtitle">Llamame!</h3>
+                            <span class="contact-description">
+                                <!-- <div class="contact-icon"> -->
+                                    <i class="lni lni-phone contact-icon"></i>
+                                    +54 9 1125408868
+                            </span>
+                        </div>
+                        <!-- contact informacione -->
+                        <div class="contact-information">
+                            <h3 class="contact-subtitle">Escribeme por mail!</h3>
+                            <span class="contact-description">
+                                <!-- <div class="contact-icon"> -->
+                                    <i class="lni lni-user contact-icon"></i>
+                                    milagrosjarag20@gmail.com
+                                <!-- </div> -->
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- contact form -->
+                <form action="https://formspree.io/f/xpzbenlv" method="POST" class="contact-form padd-15" id="my-form">
+                    <div class="contact-inputs">
+                        <!-- contact content -->
+                        <div class="contact-content">
+                            <input type="email" required name="email" id="email" class="contact-input">
+                            <label for="email" class="contact-label">Email</label>
+                            <span></span>
+                        </div>
+                        <!-- contact content -->
+                        <div class="contact-content">
+                            <input type="text" name="text" id="text" class="contact-input">
+                            <label for="text" class="contact-label">Asunto</label>
+                            <span></span>
+                        </div>
+                        <!-- contact content -->
+                        <div class="contact-content contact-area">
+                            <textarea name="message" id="message" cols="30" rows="10" class="contact-input"></textarea>
+                            <label for="message" class="contact-label">Mensaje</label>
+                            <span></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-default">Enviar</button>
+                    <!-- <a href="#" class="btn btn-default">Enviar</a> -->
+                </form>
+            </div>
+            <div id="status"></div>
+        </div>
+    </section>
+    <!--======================== FOOTER ===========================================-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-text padd-15">
+                <p>&copy; Milagros Jara 2022</p>
+            </div>
+        </div>
+    </footer>
+    <!--======================== customize ===========================================-->
+    <!-- <div class="customize-theme">
+        <label>
+            <input type="checkbo       <span class="check"></span>
+        </label>
+    </div> -->
     </main>
 
     
