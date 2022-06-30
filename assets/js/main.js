@@ -3,10 +3,9 @@ const navMenu = document.getElementById("nav-menu"),
       navClose = document.getElementById("nav-close")
 
 
-// var element = document.getElementsByClassName(".customize-theme")
-
+      
 /* ========================== SHOW MENU ====================================== */
-// ---- validate if constant exists -----//
+// ---- validar si existe -----//
 if(navToggle){
     navToggle.addEventListener('click', () => {
         navMenu.classList.add("show-menu")
